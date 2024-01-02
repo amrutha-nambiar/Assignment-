@@ -1,15 +1,20 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Printing Numbers in Reverse</title>
+    <title>Reverse of a Number</title>
 </head>
 <body>
-    <h1>Numbers from 10 to 1 in Reverse Order</h1>
-    <div id="numbers"></div>
+    <h1>Reverse of a Number</h1>
+    <input type="number" id="num">
+    <button onclick="reverseNumber()">Check</button>
+    <p id="reversedanswer"></p>
+
     <script>
-        let numbersDiv = document.getElementById("numbers");
-        for (let i = 10; i >= 1; i--) {
-            numbersDiv.innerHTML += i + "<br>";
+        function reverseNumber() {
+            var number = document.getElementById("num").value;
+            var reversedanswer = document.getElementById("reversedanswer");
+            
+            reversedanswer.innerHTML = `Reverse: ${number.split('').reverse().join('')}`;
         }
     </script>
 </body>
