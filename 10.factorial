@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Factorial</title>
+</head>
+
+<body>
+    <h1>Factorial</h1>
+
+    <label for="num">Enter a number:</label>
+    <input type="number" id="num">
+    <button onclick="
+        const num = document.getElementById('num').value;
+        let factorial = 1;
+
+        for (let i = 2; i <= num; i++) {
+            factorial *= i;
+        }
+
+        alert(`The factorial of ${num} is: ${factorial}`);
+    ">Calculate</button>
+</body>
+
+</html>
